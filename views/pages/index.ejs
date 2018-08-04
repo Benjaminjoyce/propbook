@@ -1,122 +1,203 @@
 <% include ../partials/head %>
 
     <!-- <% include ../partials/nav %> -->
-
-
-    <div class="nav">
-        <div class="container-fluid">
-            <a href="#" id="logoandname" class="navOptions"><img src="./resources/propLogo.png" alt=""> PropBook</a>
-            <a href="#" class="navOptions">Features</a>
-            <a href="#" class="navOptions">Blog</a>
-            <a href="#" class="navOptions">About</a>
-            <button class="btn-primary">SIGN UP FREE</button>
-        </div>
-
-    </div>
-    <div class="mainBody">
-        <div class="container">
-            <div id="mainHeader">
-                <h1>Maintain the value </h1>
-                <h1>of your property.</h1>
-            </div>
-            <button type="button" class="btn btn-outline-light" id="signUp">SIGN UP FREE</button>
-            <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.
-            </p>
-        </div>
-    </div>
-    <div class="secBody">
-        <h2>A Logbook for your home.</h2>
-        <p>Portect the value of your house with regular maintenceance and long-term record keeping.</p>
-        <div class="container-fluid">
-            <ul>
-                <li>
-                    <h4> Prevent problems from happening</h3>
-                        <p>We keep track of when the different components of your home need servicing, so that you don't have to.</p>
-                </li>
-                <li>
-                    <h4> One record of all work done to the propery.</h3>
-                        <p>By keeping records of all work done digitally, there is no risk of loosing documents.</p>
-                </li>
-                <li>
-                    <h4>Export record when selling the property.</h3>
-                        <p>A valuable reference that demonstrates how well you’ve cared for your home, making it a great selling device when you put your home up for sale.</p>
-                </li>
-            </ul>
-            <div class="border-line row align-items-center">
-                <div class="service-tab"></div>
-                <div class="service-tab"></div>
-                <div class="service-tab"></div>
-                <div class="service-tab"></div>
-                <div class="service-tab"></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
-                </div>
-                <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                    cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="thirdBody">
-        <div class="container-fluid">
-            <h2 id="howh2"> How it works</h2>
-            <hr>
-            <div class="row howSteps">
-                <div class="col-sm">
-                    <h6 class="subTitle number">1 </h6>
-                    <h6 class="subTitle">Sign Up Free</h6>
-                    <p>Book in for a Propbook representative to come to your home for an initial inspection.</p>
-                </div>
-                <div class="col-sm">
-                    <h6 class="subTitle number">1 </h6>
-                    <h6 class="subTitle">CONFIRMATION</h6>
-                    <p>Your Propbook account manager will email you introducing themselves. </p>
-                </div>
-                <div class="col-sm">
-                    <h6 class="subTitle number">1</h6>
-                    <h6 class="subTitle">ONBOARDING SURVEY</h6>
-                    <p>Your account manager will provide you with a short survey on when various elements of your property were last serviced.</p>
-                </div>
-                <div class="col-sm">
-                    <h6 class="subTitle number">1</h6>
-                    <h6 class="subTitle">EMAIL OR TEXT</h6>
-                    <p>When any servicing is done on your property, email or message your account manager with the details and they will update you logbook.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="forthBody">
-        <h4>Protect the value of your house with regular maintenance and long-term record keeping.</h4>
-        <button type="button" class="btn btn-outline-light" id="signUp">SIGN UP FREE</button>
-    </div>
-    <div class="footer-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <ul>
-                        <li>Features</li>
-                        <li>Blog</li>
-                        <li>About</li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    CONTENT REQUIRED
-                </div>
-                <div class="col-md">
-                    <h4>Newsletter</h4>
-                    <form action="" method="post">
-                        <p>Email Address:</p>
-                        <input type="email" name="email" placeholder="Enter your email">
-                        <button type="submit">Submit</button>
-                    </form>
+    <div class="ui grid ui sticky">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui menu borderless">
+                    <a href="#" class="item" id="propbook"><img src="./resources/propbook.png" alt=""></a>
+                    <a class="item">Features</a>
+                    <a class="item">Blog</a>
+                    <a class="item">About</a>
+                    <div class="right menu">
+                        <a class="item">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <p>Copyright © Propbook - 2018</p>
 
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui borderless menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                    <a href="#" class="item"><img src="./resources/propbook.png" alt=""></a>
+                    <div class="right menu">
+                        <a class="item">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui pushable segment">
+        <div class="ui sidebar vertical menu ">
+            <a class="item">Features</a>
+            <a class="item">Blog</a>
+            <a class="item">About</a>
+        </div>
+        <div class="pusher">
+
+            <div id="body1">
+                <h1>Maintain the value of your property</h1>
+                <div class="container">
+                    <p>Maintain.</p>
+                    <p>Track.</p>
+                    <p>Retain Value.</p>
+                </div>
+                <button class="ui inverted button">Sign Up Free</button>
+            </div>
+            <div id="body2">
+                <div class="ui container">
+                    <div class="ui equal width grid">
+                        <div class="column computer tablet only">
+                            <h2>A LOGBOOK FOR YOUR HOME.</h2>
+                            <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
+                        </div>
+                        <div class="column mobile only">
+                            <h2>A LOGBOOK FOR YOUR HOME.</h2>
+                            <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
+                        </div>
+                        <div class="equal width row">
+                            <div class="computer tablet only column">
+                                <ul>
+                                    <li>
+                                        <h4 class="h2x">Prevent Issues.</h4>
+                                        <p class="px">We keep track of when the different components of your home need servicing, so that you don't have to.</p>
+                                    </li>
+                                    <li>
+                                        <h4 class="h2x">One record.</h4>
+                                        <p class="px">By keeping records of all work done digitally, there is no risk of loosing documents.</p>
+                                    </li>
+                                    <li>
+                                        <h4 class="h2x">Export when selling.</h4>
+                                        <p class="px">A valuable reference that demonstrates how well you’ve cared for your home, making it a great selling device when you put your home up for sale.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <img src="./resources/app_view.png" alt="" srcset="">
+                            </div>
+
+                        </div>
+                        <div class="mobile only column">
+                            <ul>
+                                <li>
+                                    <h4 class="h2x">Prevent Issues.</h4>
+                                    <p class="px">We keep track of when the different components of your home need servicing, so that you don't have to.</p>
+                                </li>
+                                <li>
+                                    <h4 class="h2x">One record.</h4>
+                                    <p class="px">By keeping records of all work done digitally, there is no risk of loosing documents.</p>
+                                </li>
+                                <li>
+                                    <h4 class="h2x">Export when selling.</h4>
+                                    <p class="px">A valuable reference that demonstrates how well you’ve cared for your home, making it a great selling device when you put your home up for sale.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body3">
+                <div class="ui container">
+                    <div class="ui grid">
+                        <div class="sixteen wide column">
+                            <div class="sec-title">How it works</div>
+                            <hr id="hr1">
+                        </div>
+                        <div class="equal width row">
+                            <div class="column">
+                                <div class="colTitle">
+                                    <div class="bluNum">1</div>
+                                    <div>Sign Up Free</div>
+                                </div>
+                                <p>Book in for a Propbook representative to come to your home for an initial inspection.</p>
+                            </div>
+                            <div class="column">
+                                <div class="colTitle">
+                                    <div class="bluNum">1</div>
+                                    <div>Sign Up Free</div>
+                                </div>
+                                <p>Book in for a Propbook representative to come to your home for an initial inspection.</p>
+                            </div>
+                            <div class="column">
+                                <div class="colTitle">
+                                    <div class="bluNum">1</div>
+                                    <div>Sign Up Free</div>
+                                </div>
+                                <p>Book in for a Propbook representative to come to your home for an initial inspection.</p>
+                            </div>
+                            <div class="column">
+                                <div class="colTitle">
+                                    <div class="bluNum">1</div>
+                                    <div>Sign Up Free</div>
+                                </div>
+                                <p>Book in for a Propbook representative to come to your home for an initial inspection.</p>
+                            </div>
+                        </div>
+
+                        <div class="quotes">
+                            some text in here
+                        </div>
+
+                        <!-- SERVICE TABS START -->
+                        <div class="row" id="b-row">
+                            <div id="b-tabs">
+                                <div class="b-service-tab">
+                                    <div class="b-service-tab-service" id="b-tab1"><img src="./resources/service1.png" alt="">
+                                        <span>Service</span></div>
+                                </div>
+                                <div class="b-service-tab">
+                                    <div class="b-service-tab-service" id="b-tab2"><img src="./resources/service1.png" alt="">
+                                        <span>Service</span></div>
+                                </div>
+                                <div class="b-service-tab">
+                                    <div class="b-service-tab-service" id="b-tab3"><img src="./resources/service1.png" alt="">
+                                        <span>Service</span></div>
+                                </div>
+                                <div class="b-service-tab">
+                                    <div class="b-service-tab-service" id="b-tab4"><img src="./resources/service1.png" alt="">
+                                        <span>Service</span></div>
+                                </div>
+                                <div class="b-service-tab">
+                                    <div class="b-service-tab-service" id="b-tab5"><img src="./resources/service1.png" alt="">
+                                        <span>Service</span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="b-tabs-container" id="b-tab1C"> "Quote from Plumber This will be copy about the benefits of regularly maintained plumbing.</div>
+                                <div class="b-tabs-container" id="b-tab2C"> "Quote from Elect This will be copy about the benefits of regularly maintained plumbing. </div>
+                                <div class="b-tabs-container" id="b-tab3C"> "Quote from Manufactuer This will be copy about the benefits of regularly maintained plumbing. </div>
+                                <div class="b-tabs-container" id="b-tab4C"> "Quote from Exterior This will be copy about the benefits of regularly maintained plumbing. </div>
+                                <div class="b-tabs-container" id="b-tab5C"> "Quote from Interior This will be copy about the benefits of regularly maintained plumbing. </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
 
         <% include ../partials/foot %>
+
+            <!--    ##### FORM FOR NAME AND EMAIL ######
+                 <div class="container row">
+                    <form action="" method="post" class="ui large form">
+                        <div class="two fields">
+                            <div class="field">
+                                <label>First Name</label>
+                                <input placeholder="First Name" type="text">
+                            </div>
+                            <div class="field">
+                                <label>Last Name</label>
+                                <input placeholder="Last Name" type="text">
+                            </div>
+                        </div>
+                        <div class="ui submit button">Submit</div>
+                    </form>
+                </div>
+            </div> -->

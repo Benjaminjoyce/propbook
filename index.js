@@ -1,5 +1,9 @@
+require('dotenv').config();
 //tools
-var bodyParser = require("body-parser"),
+var methodOverride = require("method-override"),
+    localStrategy = require("passport-local"),
+    passport = require("passport"),
+    bodyParser = require("body-parser"),
     express = require("express"),
     app = express();
 

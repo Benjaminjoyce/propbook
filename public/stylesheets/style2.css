@@ -1,0 +1,189 @@
+.nav {
+    width: 100%;
+    height: 1%;
+    background-color: white;
+    padding-top: 20px;
+    color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2% 0 2% 0;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    background: url('/resources/house3.jpeg') no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.mainBody {
+    width: auto;
+    min-height: 530px auto;
+    background-color: rgba(31, 111, 255, 0.8);
+    padding: 100px 0 100px 0;
+    text-align: center;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+.secBody {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 50px 0 50px 0;
+}
+
+.thirdBody {
+    width: 100%;
+    height: auto;
+    background: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.forthBody {
+    width: 100%;
+    height: 215px;
+    background: rgba(31, 111, 255);
+    padding: 80px 80px 0;
+}
+
+.footer-nav {
+    width: 100%;
+    height: 200px;
+    background: white;
+}
+
+#mainHeader {
+    margin-bottom: 30px;
+}
+
+.mainBody>div>div>h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    margin: 0 10% 0 10%;
+}
+
+#signUp {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 9px 25px 9px 25px;
+}
+
+.mainBody>div>p {
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0.7;
+}
+
+.navOptions {
+    padding: 11px 15px 11px 15px;
+    font-weight: 400;
+    color: #363636;
+    letter-spacing: 2px;
+    text-decoration: none;
+    max-width: 90px;
+    margin: 50px 1% 50px 0;
+}
+
+#logoandname {
+    height: 40%;
+    width: auto;
+    font-size: 45px;
+    font-weight: 900;
+    display: inline;
+    text-decoration: none;
+    letter-spacing: none;
+}
+
+#logoandname>img {
+    height: 60%;
+    width: auto;
+    margin: 0 0 20px 7%;
+}
+
+button.btn-primary {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 9px 25px 9px 25px;
+    background-color: #1f6fff;
+    border-radius: 5px;
+    float: right;
+    margin: 10px 7% 0 0;
+}
+
+div.secBody>h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.secBody>p {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+div.secBody>div.container>ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 100px;
+}
+
+div.secBody>div.container>ul>li {
+    margin: 40px 0 0 0;
+}
+
+div.secBody>div.container {
+    margin-left: 2%;
+}
+
+h6.subTitle {
+    display: inline;
+}
+
+h6.subTitle.number {
+    color: #1f6fff;
+}
+
+.howSteps {
+    text-align: left;
+}
+
+#howh2 {
+    text-transform: uppercase;
+}
+
+.howSteps>div.col>p {
+    margin-top: 20px;
+}
+
+div.forthBody>h4 {
+    color: white;
+}
+
+div.forthBody>button {}
+
+li {
+    list-style: none;
+}
+
+.servTab {
+    width: 15%;
+    border-radius: 50%;
+    background: skyblue;
+}
+
+.servTab:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
