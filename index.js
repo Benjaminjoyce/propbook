@@ -7,6 +7,10 @@ var methodOverride = require("method-override"),
     express = require("express"),
     app = express();
 
+//database
+
+
+
 // REQURING ROUTES
 var indexRoutes = require("./routes/index"),
     routes1 = require("./routes/routes1"),

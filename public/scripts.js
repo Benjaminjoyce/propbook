@@ -12,14 +12,14 @@ $('.ui.sticky')
 
 $(document).ready(function() {
 
-    $('#b-tabs div div:not(:first)').addClass('b-inactive');
+    $('#b-tabs div:not(:first)').addClass('b-inactive');
     $('.b-tabs-container').hide();
     $('.b-tabs-container:first').show();
 
-    $('#b-tabs div div').hover(function() {
+    $('#b-tabs div').click(function() {
         var t = $(this).attr('id');
         if ($(this).hasClass('b-inactive')) { //this is the start of our condition 
-            $('#b-tabs div div').addClass('b-inactive');
+            $('#b-tabs div').addClass('b-inactive');
             $(this).removeClass('b-inactive');
 
             $('.b-tabs-container').hide();
@@ -29,3 +29,16 @@ $(document).ready(function() {
     });
 
 });
+
+// $(document).ready(function() {
+//     $('#b-tabs div').addClass('b-mouseO');
+
+//     $('#b-tabs div').hover(function() {
+//         var t = $(this).attr('id');
+//         if ($(this).hasClass('b-mouseO')) {
+//             $('#b-tabs div').addClass('b-mouseO');
+//             $(this).removeClass('b-mouseO');
+//         }
+//     })
+
+// });
