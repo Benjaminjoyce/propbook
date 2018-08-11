@@ -1,31 +1,32 @@
 require('dotenv').config();
 //tools
-var methodOverride = require("method-override"),
-    localStrategy = require("passport-local"),
-    passport = require("passport"),
-    bodyParser = require("body-parser"),
-    express = require("express"),
+var express = require("express"),
     app = express();
+
+    // methodOverride = require("method-override"),
+    // localStrategy = require("passport-local"),
+    // passport = require("passport"),
+    // bodyParser = require("body-parser"),
 
 //database
 
 
 
 // REQURING ROUTES
-var indexRoutes = require("./routes/index"),
-    routes1 = require("./routes/routes1"),
-    routes2 = require("./routes/routes2");
+var indexRoutes = require("./routes/index");
+    // routes1 = require("./routes/routes1"),
+    // routes2 = require("./routes/routes2");
 
 
 //APP CONFIG
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
 //USE ROUTES
 app.use("/", indexRoutes);
-app.use("/routes1", routes1);
-app.use("/routes2", routes2);
+// app.use("/routes1", routes1);
+// app.use("/routes2", routes2);
 
 
 // router.post("/client", function(req, res){
@@ -45,9 +46,11 @@ app.use("/routes2", routes2);
 // })
 
 // SERVER
+
 port = process.env.PORT
+
 app.listen(port, function() {
-    console.log(port + "s and heart-breaks");
+    console.log(port);
 });
 //process.env.PORT || 3000, process.env.IP
 
