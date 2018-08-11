@@ -292,7 +292,15 @@ width: 100%;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: auto;
+}
+
+.b-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 #b-tabs div {
@@ -318,6 +326,36 @@ width: 100%;
     align-items: center;
     line-height: 15px;
 }
+
+.b-mob-serv{
+    height: 17vw;
+    width: 17vw;
+}
+
+.b-tabs div {
+    height: 17vw;
+    width: 17vw;
+    border-radius: 50%;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px;
+    align-content: center;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 1vw 1vw;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 15px;
+}
+
 
 div.b-service-tab img {
     display: block;
@@ -371,6 +409,7 @@ div.b-mouseO span {
     height: 100px;
     display: flex;
     justify-content: space-between;
+    margin: 0 5% 0 5%;
 }
 
 .b-tabs-container h4 {
@@ -387,7 +426,7 @@ div.b-mouseO span {
     align-items: center;
     justify-content: center;
     overflow: auto;
-    background-color: #1f6fff;
+    background-color: #4294dd;
     color: white;
     min-height: 35vh;
     padding: 2vh 2vw;
@@ -456,13 +495,13 @@ form.ui.input>input.b-email::after {
 }
 
 #b-signUpPage {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background: #73C8A9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 5%;
-    padding: 2vw 2vw;
+    padding: 5vw 5vw;
 }
 #b-signUpPage>div.twelve.wide.row{
 margin: 5vh 5vh;
@@ -513,7 +552,32 @@ width: 100%;
 
 }
 
+.b-mob-btn{
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  text-transform: uppercase;
 
+}
+
+a.b-mob-btn>button{
+    text-transform: uppercase;
+}
+
+
+
+.ui.primary.buttons .button, .ui.primary.button {
+    background-color: #4294dd;
+    background-color: -webkit-linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: none;
+    background-image: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+a:hover{
+}
 /* a:hover{
     
 } */
