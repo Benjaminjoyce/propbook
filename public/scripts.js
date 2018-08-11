@@ -29,6 +29,13 @@ $(document).ready(function() {
     });
 
 });
+$(document).ready(function() {
+    $('.b-signUp').click(function() {
+        $('.page.dimmer:first')
+            .dimmer('toggle');
+    })
+});
+
 
 // $(document).ready(function() {
 //     $('#b-tabs div').addClass('b-mouseO');

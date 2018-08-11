@@ -1,7 +1,4 @@
 body {
-    background: url('/resources/house3.jpeg') no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 0;
 }
@@ -43,7 +40,7 @@ a#propbook.item {
 a#propbook.item>img {
     height: 4em;
     width: auto;
-    margin-left: 2em;
+    margin-left: 1vw;
 }
 
 
@@ -51,7 +48,8 @@ a#propbook.item>img {
 
 div.ui.borderless.menu {
     height: 15vh;
-    padding-right: 5em;
+    /* padding-right: 5em; */
+    width: 100%;
 }
 
 div.ui.borderless.menu>a.item {
@@ -192,7 +190,21 @@ a#mobile_item.item>i {
     max-width: auto;
 }
 
-#body2>div.ui.container>div.ui.equal.width.grid>div.equal.width.row>div.column>ul {
+#b-comp-ul {
+    margin: 5em 5em 10em 0;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    height: 70%;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 0;
+    width: 80%;
+}
+
+#b-mobe-ul {
     margin: 5em 5em 10em 0;
     padding-top: 1em;
     padding-bottom: 5em;
@@ -286,8 +298,8 @@ a#mobile_item.item>i {
 }
 
 #b-tabs div {
-    height: 20vh;
-    width: 20vh;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     border-top-color: rgba(0, 0, 0, 0.1);
     border-right-color: rgba(0, 0, 0, 0.1);
@@ -297,6 +309,9 @@ a#mobile_item.item>i {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px;
     align-content: center;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
     margin: 1vw 1vw;
     text-transform: uppercase;
     display: flex;
@@ -329,7 +344,7 @@ div.b-service-tab img {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 12px;
-    color: #333;
+    color: #c7c7c7;
     list-style: none;
     text-align: center;
     line-height: 15px;
@@ -346,7 +361,7 @@ div.b-mouseO span {
 }
 
 #b-tabs div.b-inactive:hover {
-    color: #2B32B2;
+    color: #2691f4;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px;
 }
 
@@ -435,6 +450,18 @@ div.b-mouseO span {
 form.ui.input>input.b-email::after {
     content: "\A";
     white-space: pre;
+}
+
+#b-signUpDimmer {
+    width: 100%;
+    height: 100%;
+}
+
+#b-signUpPage {
+    width: 50vw;
+    height: 50vw;
+    background-color: aliceblue;
+    border-radius: 5%;
 }
 
 

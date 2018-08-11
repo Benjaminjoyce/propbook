@@ -1,87 +1,31 @@
 <% include ../partials/head %>
 
-    <!-- <% include ../partials/nav %> -->
-    <div class="ui grid ui sticky">
-        <div class="computer only row">
-            <div class="column">
-                <div class="ui menu borderless">
-                    <a href="#" class="item" id="propbook"><img src="./resources/propbook.png" alt=""></a>
-                    <a class="item">Features</a>
-                    <a class="item">Blog</a>
-                    <a class="item">About</a>
-                    <div class="right menu">
-                        <a class="item ui"><button class="ui primary button">SIGN UP</button></a>
+    <% include ../partials/nav %>
+
+
+        <div id="body1">
+            <h1>Maintain the value of your property</h1>
+            <div class="container">
+                <p>Maintain.</p>
+                <p>Track.</p>
+                <p>Retain Value.</p>
+            </div>
+            <button class="ui inverted button">Sign Up Free</button>
+        </div>
+        <div id="body2">
+            <div class="ui container">
+                <div class="ui equal width grid">
+                    <div class="column computer tablet only">
+                        <h2>A LOGBOOK FOR YOUR HOME.</h2>
+                        <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="tablet mobile only row">
-            <div class="column">
-                <div class="ui borderless menu">
-                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
-                    <a href="#" class="item"><img src="./resources/propbook.png" alt=""></a>
-                    <div class="right menu">
-                        <a class="item"><button class="ui primary button">SIGN UP</button></a>
+                    <div class="column mobile only">
+                        <h2>A LOGBOOK FOR YOUR HOME.</h2>
+                        <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="ui pushable segment">
-        <div class="ui sidebar vertical menu ">
-            <a class="item">Features</a>
-            <a class="item">Blog</a>
-            <a class="item">About</a>
-        </div>
-        <div class="pusher">
-
-            <div id="body1">
-                <h1>Maintain the value of your property</h1>
-                <div class="container">
-                    <p>Maintain.</p>
-                    <p>Track.</p>
-                    <p>Retain Value.</p>
-                </div>
-                <button class="ui inverted button">Sign Up Free</button>
-            </div>
-            <div id="body2">
-                <div class="ui container">
-                    <div class="ui equal width grid">
-                        <div class="column computer tablet only">
-                            <h2>A LOGBOOK FOR YOUR HOME.</h2>
-                            <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
-                        </div>
-                        <div class="column mobile only">
-                            <h2>A LOGBOOK FOR YOUR HOME.</h2>
-                            <p>Propbook is Australia's first digital logbook for your home. Providing a secure way to track all maintenance done on your home -which can be used to inspire confidence for a future buyer.</p>
-                        </div>
-                        <div class="equal width row">
-                            <div class="computer tablet only column">
-                                <ul>
-                                    <li>
-                                        <h4 class="h2x">Prevent Issues.</h4>
-                                        <p class="px">We keep track of when the different components of your home need servicing, so that you don't have to.</p>
-                                    </li>
-                                    <li>
-                                        <h4 class="h2x">One record.</h4>
-                                        <p class="px">By keeping records of all work done digitally, there is no risk of loosing documents.</p>
-                                    </li>
-                                    <li>
-                                        <h4 class="h2x">Export when selling.</h4>
-                                        <p class="px">A valuable reference that demonstrates how well you’ve cared for your home, making it a great selling device when you put your home up for sale.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="column">
-                                <img src="./resources/app_view.png" alt="" srcset="">
-                            </div>
-
-                        </div>
-                        <div class="mobile only column">
-                            <ul>
+                    <div class="equal width row">
+                        <div class="computer tablet only column">
+                            <ul id="b-comp-ul">
                                 <li>
                                     <h4 class="h2x">Prevent Issues.</h4>
                                     <p class="px">We keep track of when the different components of your home need servicing, so that you don't have to.</p>
@@ -96,144 +40,152 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="column">
+                            <img src="./resources/app_view.png" alt="" srcset="">
+                        </div>
+
+                    </div>
+                    <div class="mobile only column">
+                        <ul id="b-mobe-ul">
+                            <li>
+                                <h4 class="h2x">Prevent Issues.</h4>
+                                <p class="px">We keep track of when the different components of your home need servicing, so that you don't have to.</p>
+                            </li>
+                            <li>
+                                <h4 class="h2x">One record.</h4>
+                                <p class="px">By keeping records of all work done digitally, there is no risk of loosing documents.</p>
+                            </li>
+                            <li>
+                                <h4 class="h2x">Export when selling.</h4>
+                                <p class="px">A valuable reference that demonstrates how well you’ve cared for your home, making it a great selling device when you put your home up for sale.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="body3">
-                <div class="ui container">
-                    <div class="ui grid">
-                        <div class="sixteen wide column">
-                            <div class="sec-title">How it works</div>
-                            <hr id="hr1">
+        </div>
+        <div class="body3">
+            <div class="ui container">
+                <div class="ui grid">
+                    <div class="sixteen wide column">
+                        <div class="sec-title">How it works</div>
+                        <hr id="hr1">
+                    </div>
+                    <div class="doubling four column row" id="b-steps">
+                        <div class="column">
+                            <div class="colTitle">
+                                <div class="bluNum">1</div>
+                                <div>Sign Up Free.</div>
+                            </div>
+                            <p class="px"> Enter your name and email address to join the waitlist. While you are waiting, you will be sent progress updates and maintenance how-tos.</p>
                         </div>
-                        <div class="doubling four column row" id="b-steps">
-                            <div class="column">
-                                <div class="colTitle">
-                                    <div class="bluNum">1</div>
-                                    <div>Sign Up Free</div>
-                                </div>
-                                <p class="px">Book in for a Propbook representative to come to your home for an initial inspection.</p>
+                        <div class="column">
+                            <div class="colTitle">
+                                <div class="bluNum">2</div>
+                                <div>Start your own Propbook.</div>
                             </div>
-                            <div class="column">
-                                <div class="colTitle">
-                                    <div class="bluNum">2</div>
-                                    <div>CONFIRMATION</div>
-                                </div>
-                                <p class="px">Your Propbook account manager will email you introducing themselves. </p>
-                            </div>
-                            <div class="column">
-                                <div class="colTitle">
-                                    <div class="bluNum">3</div>
-                                    <div>ONBOARDING SURVEY</div>
-                                </div>
-                                <p class="px">Your account manager will provide you with a short survey on when various elements of your property were last serviced.</p>
-                            </div>
-                            <div class="column">
-                                <div class="colTitle">
-                                    <div class="bluNum">4</div>
-                                    <div>Sign Up Free</div>
-                                </div>
-                                <p class="px">When any servicing is done on your property, email or message your account manager with the details and they will update you logbook.</p>
-                            </div>
+                            <p class="px">Once accepted, set up your home on Propbook and start receiving notifications for required maintenance, you can quickly and easily confirm what has and hasn’t been done. </p>
                         </div>
-
-                        <!-- SERVICE TABS START -->
-                        <div class="row" id="b-row">
-                            <div id="b-tabs">
-                                <div class="b-service-tab" id="b-tab1">
-                                    <img src="./resources/service1.png" alt="">
-                                    <span>Service</span></div>
-
-                                <div class="b-service-tab" id="b-tab2">
-                                    <img src="./resources/service1.png" alt="">
-                                    <span>Service</span></div>
-
-                                <div class="b-service-tab" id="b-tab3">
-                                    <img src="./resources/appliance.png" alt="">
-                                    <span>Appliances</span></div>
-
-                                <div class="b-service-tab" id="b-tab4">
-                                    <img src="./resources/service1.png" alt="">
-                                    <span>Service</span></div>
-
-                                <div class="b-service-tab" id="b-tab5">
-                                    <img src="./resources/paintRoller.png" alt="">
-                                    <span>Interior</span></div>
+                        <div class="column">
+                            <div class="colTitle">
+                                <div class="bluNum">3</div>
+                                <div>Be Reminded.</div>
                             </div>
+                            <p class="px"> We understand everyone leads busy lives, so we remind you when something is due for maintenance.</p>
                         </div>
-                        <div class="row">
-                            <div class="b-tabs-container" id="b-tab1C">
-                                <h4>"Quote from Plumber</h4>
-                                <p>This will be copy about the benefits of regularly maintained plumbing.</p>
+                        <div class="column">
+                            <div class="colTitle">
+                                <div class="bluNum">4</div>
+                                <div>Maintain.</div>
                             </div>
-                            <div class="b-tabs-container" id="b-tab2C">
-                                <h4>"Attention to detail"-</h4>
-                                <p class="px">Madeliene is one of our top interior designers who gets that its all the small things that make a place. Whether your looking to make your home cozy, spacious or your own unique style Madeliene will make sure nothing gets
-                                    over looked.</p>
-                            </div>
-                            <div class="b-tabs-container" id="b-tab3C">
-                                <h4>"Quote from Appliance</h4>
-                                <p class="px">This will be copy about the benefits of regularly maintained plumbing.</p>
-                            </div>
-                            <div class="b-tabs-container" id="b-tab4C">
-                                <h4>"Quote from Interior</h4>
-                                <p class="px">This will be copy about the benefits of regularly maintained plumbing.</p>
-                            </div>
-                            <div class="b-tabs-container" id="b-tab5C">
-                                <h4>"Quote from Exterior</h4>
-                                <p>This will be copy about the benefits of regularly maintained plumbing.</p>
-                            </div>
+                            <p class="px"> It is up to you! With each notification, you can access information regarding how to correctly and safely complete the task, or you can book in a tradesperson!</p>
                         </div>
                     </div>
 
-                </div>
+                    <!-- SERVICE TABS START -->
+                    <div class="computer tablet only row" id="b-row">
+                        <div id="b-tabs">
+                            <div class="b-service-tab" id="b-tab1">
+                                <img src="./resources/service1.png" alt="">
+                                <span>Exterior</span></div>
 
+                            <div class="b-service-tab" id="b-tab2">
+                                <img src="./resources/service1.png" alt="">
+                                <span>Interior</span></div>
 
+                            <div class="b-service-tab" id="b-tab3">
+                                <img src="./resources/appliance.png" alt="">
+                                <span>Appliances</span></div>
 
-            </div>
-            <div class="body4">
-                <h4 id="b-h4">Protect the value of your house with regular maintenance and long-term record keeping.</h4>
-                <button class="ui inverted button">Sign Up Free</button>
-            </div>
-            <div class="b-footer-nav ui container">
-                <div class="ui two column grid">
+                            <div class="b-service-tab" id="b-tab4">
+                                <img src="./resources/service1.png" alt="">
+                                <span>Electrical</span></div>
+
+                            <div class="b-service-tab" id="b-tab5">
+                                <img src="./resources/paintRoller.png" alt="">
+                                <span>Plumbing</span></div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="column">
-                            <ul id="b-footer-links">
-                                <li>Features</li>
-                                <li>Blog</li>
-                                <li>About</li>
-                            </ul>
+                        <div class="b-tabs-container" id="b-tab1C">
+                            <h4>Roofing, painting</h4>
+                            <p>This will be copy about the benefits of regularly maintained plumbing.</p>
                         </div>
-
-                        <div class="column">
-                            <h4 id="b-h45">Newsletter</h4>
-                            <form action="" method="post" id="b-newsLetter" class="ui input">
-                                <input type="email" name="email" placeholder="Enter your email" class="b-email">
-                                <button type="submit" class="ui primary button">Submit</button>
-                            </form>
+                        <div class="b-tabs-container" id="b-tab2C">
+                            <h4>"Attention to detail"-</h4>
+                            <p class="px">Madeliene is one of our top interior designers who gets that its all the small things that make a place. Whether your looking to make your home cozy, spacious or your own unique style Madeliene will make sure nothing gets over
+                                looked.
+                            </p>
+                        </div>
+                        <div class="b-tabs-container" id="b-tab3C">
+                            <h4>"Quote from Appliance</h4>
+                            <p class="px">This will be copy about the benefits of regularly maintained plumbing.</p>
+                        </div>
+                        <div class="b-tabs-container" id="b-tab4C">
+                            <h4>"Quote from Interior</h4>
+                            <p class="px">This will be copy about the benefits of regularly maintained plumbing.</p>
+                        </div>
+                        <div class="b-tabs-container" id="b-tab5C">
+                            <h4>"Quote from Exterior</h4>
+                            <p>This will be copy about the benefits of regularly maintained plumbing.</p>
                         </div>
                     </div>
                 </div>
-                <hr>
-                <p>Copyright © Propbook - 2018</p>
 
-                <% include ../partials/foot %>
+            </div>
 
-                    <!--    ##### FORM FOR NAME AND EMAIL ######
-                 <div class="container row">
-                    <form action="" method="post" class="ui large form">
-                        <div class="two fields">
-                            <div class="field">
-                                <label>First Name</label>
-                                <input placeholder="First Name" type="text">
-                            </div>
-                            <div class="field">
-                                <label>Last Name</label>
-                                <input placeholder="Last Name" type="text">
-                            </div>
-                        </div>
-                        <div class="ui submit button">Submit</div>
+
+
+        </div>
+        <div class="body4">
+            <h4 id="b-h4">Protect the value of your house with regular maintenance and long-term record keeping.</h4>
+            <button class="ui inverted button b-signUp">Sign Up Free</button>
+        </div>
+        </div>
+        <!-- <div class="content" id="b-signUpPage">
+            <div class="ui page inverted dimmer" id="b-signUpDimmer">
+                <div class="ui grid">
+                    <div class="twelve wide row">
+                        <h1>Join Propbook</h1>
+                    </div>
+                    <div class="fourteen wide row">
+                        <form action="#" method="post" class="ui input">
+                            <input type="text" name="" id="" placeholder="Your Name">
+                    </div>
+                    <hr>
+                    <div class="fourteen wide row">
+                        <p>Email</p>
+                        <input type="email" name="" id="b-signUpEmail" placeholder="Email address">
+                    </div>
+                    <hr>
+
+
+
+
+
+
                     </form>
                 </div>
-            </div> -->
+            </div>
+        </div> -->
+        <% include ../partials/foot %>
