@@ -46,7 +46,9 @@ app.use("/", indexRoutes);
 // })
 
 // SERVER
-port = 8080 || process.env.Port, process.env.IP
+
+port = process.env.PORT
+
 app.listen(port, function() {
     console.log(port);
 });
