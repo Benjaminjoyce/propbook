@@ -45,7 +45,7 @@ app.use("/routes2", routes2);
 // })
 
 // SERVER
-port = 8080
+port = 5000
 app.listen(port, function() {
     console.log(port + "s and heart-breaks");
 });
