@@ -84,13 +84,11 @@ a#mobile_item.item>i {
 /* body part 1 */
 
 #body1 {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1488CC, #2B32B2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1488CC, #2B32B2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
+
+    background: #73C8A9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 100%;
     height: auto;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -361,7 +359,7 @@ div.b-mouseO span {
 }
 
 #b-tabs div.b-inactive:hover {
-    color: #2691f4;
+    color: #4d4d4d;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px;
 }
 
@@ -458,13 +456,67 @@ form.ui.input>input.b-email::after {
 }
 
 #b-signUpPage {
-    width: 50vw;
-    height: 50vw;
-    background-color: aliceblue;
+    width: auto;
+    height: auto;
+    background: #73C8A9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 5%;
+    padding: 2vw 2vw;
+}
+#b-signUpPage>div.twelve.wide.row{
+margin: 5vh 5vh;
+}
+
+#b-sE{
+    border: none;
+    background:none;
+    outline: 0;
+    padding: none;
+    width: 100%;
+    color: white;
+}
+
+#b-sN{
+    border: none;
+    outline: 0;
+    padding: none;
+    background:none;
+    width: 100%;
+    color: white;
+    
+
+}
+
+.b-sH6{
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin: 5% 0;
+}
+
+.b-sHr{
+ margin: 1% 0 10% 0;
+ box-shadow: none;
+ background: none;
+ border-color: white;
+ border-style: solid;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+
+}
+
+.b-sF{
+width: 100%;
+
 }
 
 
+a:hover{
+    
+}
 /* #own-grid {
     display: flex;
     justify-content: space-around;

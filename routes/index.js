@@ -11,5 +11,18 @@ router.get("/", function(req, res) {
 
 
 
+// router.post("/client", function(req, res){
+//     var newUser = new Client({name: req.body.name});
+//     User.client(client, req.body.email, function(err, user){
+//         if(err){
+//             req.flash("error", err.message);
+//             return res.render("/");
+//         }
+//         res.console.log(name + " : " + email)
+//        res.redirect("/")
+//     });
+// });
+
+
 
 module.exports = router;

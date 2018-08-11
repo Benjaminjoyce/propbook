@@ -27,6 +27,19 @@ app.use("/", indexRoutes);
 app.use("/routes1", routes1);
 app.use("/routes2", routes2);
 
+
+// router.post("/client", function(req, res){
+//     var newUser = new Client({name: req.body.name});
+//     User.client(client, req.body.email, function(err, user){
+//         if(err){
+//             req.flash("error", err.message);
+//             return res.render("/");
+//         }
+//         res.console.log(name + " : " + email)
+//        res.redirect("/")
+//     });
+// });
+
 // app.get("/", function(req, res) {
 //     res.render("pages/index")
 // })
@@ -37,3 +50,4 @@ app.listen(port, function() {
     console.log(port + "s and heart-breaks");
 });
 //process.env.PORT || 3000, process.env.IP
+
