@@ -47,7 +47,7 @@ app.use("/", indexRoutes);
 
 // SERVER
 
-port = process.env.PORT
+port =  process.env.PORT || 3000, process.env.IP
 
 app.listen(port, function() {
     console.log(port);
