@@ -11,7 +11,7 @@ router.get("/", function(req, res) {
 
 
 
-// router.post("/client", function(req, res){
+// router.put("/client", function(req, res){
 //     var newUser = new Client({name: req.body.name});
 //     User.client(client, req.body.email, function(err, user){
 //         if(err){
