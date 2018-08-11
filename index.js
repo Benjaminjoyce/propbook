@@ -45,7 +45,7 @@ app.use("/routes2", routes2);
 // })
 
 // SERVER
-port = 5000
+port = process.env.PORT
 app.listen(port, function() {
     console.log(port + "s and heart-breaks");
 });
