@@ -1,56 +1,18 @@
-require('dotenv').config();
-//tools
-var express = require("express"),
-    app = express();
+const express = require('express');
 
-    // methodOverride = require("method-override"),
-    // localStrategy = require("passport-local"),
-    // passport = require("passport"),
-    // bodyParser = require("body-parser"),
-
-//database
+const app = express();
 
 
 
-// REQURING ROUTES
-var indexRoutes = require("./routes/index");
-    // routes1 = require("./routes/routes1"),
-    // routes2 = require("./routes/routes2");
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
 
-//APP CONFIG
-// app.use(bodyParser.urlencoded({ extended: true }));
-app.set("view engine", "ejs");
-app.use(express.static(__dirname + '/public'));
+    const path = require('path');
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    })
+}
 
-//USE ROUTES
-app.use("/", indexRoutes);
-// app.use("/routes1", routes1);
-// app.use("/routes2", routes2);
-
-
-// router.post("/client", function(req, res){
-//     var newUser = new Client({name: req.body.name});
-//     User.client(client, req.body.email, function(err, user){
-//         if(err){
-//             req.flash("error", err.message);
-//             return res.render("/");
-//         }
-//         res.console.log(name + " : " + email)
-//        res.redirect("/")
-//     });
-// });
-
-// app.get("/", function(req, res) {
-//     res.render("pages/index")
-// })
-
-// SERVER
-
-port =  process.env.PORT || 3000, process.env.IP
-
-app.listen(port, function() {
-    console.log(port);
-});
-//process.env.PORT || 3000, process.env.IP
-
+const PORT = process.env.PORT
+app.listen(PORT);
