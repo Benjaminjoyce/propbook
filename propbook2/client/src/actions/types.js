@@ -1,1 +1,0 @@
-export const ADD_WAIT_LIST = 'addWaitList';
